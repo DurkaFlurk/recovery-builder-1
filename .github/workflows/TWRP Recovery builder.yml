@@ -16,7 +16,7 @@ env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
   DEVICE: Power_Armor14_Pro 
   DT_LINK: https://github.com/DurkaFlurk/android_device_Power_Armor14_Pro.git
-  DT_PATH: device/PowerArmor14Pro
+  DT_PATH: device/Power_Armor14_Pro
   TARGET: bootimage
   TZ: Asia/Karachi
 
@@ -55,7 +55,7 @@ jobs:
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh &&lunch omni_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
+              . build/envsetup.sh &&lunch twrp_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - name: Release recovery image
          uses: softprops/action-gh-release@v1
