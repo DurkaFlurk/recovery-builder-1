@@ -14,7 +14,7 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
-  DEVICE: REL
+  DEVICE: Power_Armor14_Pro 
   DT_LINK: https://github.com/DurkaFlurk/android_device_Power_Armor14_Pro.git
   DT_PATH: device/PowerArmor14Pro
   TARGET: bootimage
